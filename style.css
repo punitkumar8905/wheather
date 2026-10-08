@@ -1,0 +1,265 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0f0f0f,
+        #1b1b1b,
+        #111
+    );
+
+    padding:12px;
+
+    overflow:hidden;
+}
+
+/* MAIN CONTAINER */
+
+.weather-container{
+
+    width:100%;
+    max-width:390px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #121212,
+        #0b0b0b
+    );
+
+    border-radius:28px;
+
+    padding:20px;
+
+    color:#fff;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,0.5);
+
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+/* SEARCH BOX */
+
+.search-box{
+
+    display:flex;
+    gap:10px;
+
+    margin-bottom:20px;
+}
+
+.search-box input{
+
+    flex:1;
+
+    height:46px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+    background:#1c1c1c;
+
+    color:#fff;
+
+    font-size:14px;
+}
+
+.search-box input::placeholder{
+    color:#999;
+}
+
+.search-btn{
+
+    width: 35px;
+    height:35px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#fff;
+    font-size:16px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
+
+    transition:0.3s ease;
+}
+
+.search-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(79,172,254,0.35);
+}
+
+/* UNIT */
+
+.unit{
+
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+
+    margin-bottom:10px;
+
+    font-size:20px;
+    font-weight:600;
+}
+
+.unit span{
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.unit .active{
+    opacity:1;
+}
+
+/* WEATHER INFO */
+
+.weather-info{
+    text-align:center;
+}
+
+.weather-info h1{
+
+    font-size:32px;
+    font-weight:700;
+
+    margin-bottom:6px;
+}
+
+.date{
+
+    color:#bdbdbd;
+    font-size:12px;
+
+    margin-bottom:18px;
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#1f1f1f;
+
+    margin-bottom:18px;
+
+    font-size:13px;
+}
+
+.weather-icon{
+
+    font-size:58px;
+
+    margin-bottom:12px;
+
+    color:#fff;
+}
+
+.temperature{
+
+    font-size:46px;
+    font-weight:600;
+
+    margin-bottom:6px;
+}
+
+.min-max{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    color:#bdbdbd;
+
+    margin-bottom:24px;
+
+    font-size:14px;
+}
+
+/* WEATHER CARDS */
+
+.weather-cards{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.card{
+
+    background:#171717;
+
+    border-radius:16px;
+
+    padding:16px 14px;
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    transition:0.3s ease;
+
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.card:hover{
+
+    transform:translateY(-3px);
+
+    background:#1e1e1e;
+}
+
+.card i{
+
+    font-size:20px;
+
+    color:#fff;
+}
+
+.card-text h3{
+
+    font-size:13px;
+    font-weight:500;
+
+    margin-bottom:2px;
+}
+
+.card-text p{
+
+    color:#d7d7d7;
+    font-size:13px;
+}
